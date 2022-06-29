@@ -394,6 +394,62 @@ ul, ol {
 .header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr auto;
+  -ms-grid-columns: auto 40px 1fr 40px auto;
   grid-template-columns: auto 1fr auto;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/*********************************\
+        $NAVS
+\*********************************/
+.nav__list-enlace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 52px;
+     -moz-column-gap: 52px;
+          column-gap: 52px;
+  padding-top: 20px;
+}
+.nav__enlace {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3f579a;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+/*********************************\
+        $SEARCHS
+\*********************************/
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+.search__icon {
+  font-size: 20px;
+  color: #8841DA;
+}
+.search__label {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #3f579a;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }

@@ -4,5 +4,12 @@
 
 .header{
     display: grid;
-    grid-template-columns: auto 1fr auto
+    grid-template-columns: auto 1fr auto;
+    column-gap: 40px;
+    padding: {
+        left: 20px;
+        right: 20px;
+        bottom: 12px;
+    }
+    border-bottom: 1px solid selecColorBg(gray-soft);
 }
