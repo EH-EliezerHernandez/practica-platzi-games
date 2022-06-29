@@ -1,0 +1,42 @@
+/*********************************\
+        $VARIABLES
+\*********************************/
+
+/*-------DEFINICION DE COLORES */ 
+$color-primario: #333333;
+$color-secundario: #8841DA;
+$color-variacion: #3f579a;
+$color-claro: #FFF;
+$color-gray-soft: #ebebeb;
+
+/*-------COLORS TEXT---- */
+$colors-text:(
+    primario: $color-primario,
+    secundario: $color-secundario,
+    variacion: $color-variacion,
+    claro: $color-claro,
+    );
+    
+/*-------COLORS BACKGROUND---- */
+$colors-background:(
+        primario: $color-primario,
+        secundario: $color-secundario,
+        claro: $color-claro,
+        gray-soft: $color-gray-soft,
+);
+
+/*-------FONT WEIGHTS---- */
+$fonts-weight: (
+        normal: 400,
+        bold: 700,
+);
+
+/*-------FONT FAMILYS--------- */
+$font-primaria: 'Lato', sans-serif;
+$font-secundaria: 'Oswald', sans-serif;
+
+/*-------FONT SIZES--------- */
+$font-sizes: (
+        big: 18px,
+        u-big: 50px,
+);

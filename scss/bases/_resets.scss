@@ -1,0 +1,30 @@
+/*********************************\
+        $RESETS
+\*********************************/
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: $font-primaria;
+}
+
+picture{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+}
