@@ -1,0 +1,20 @@
+/*********************************\
+        $NAVS
+\*********************************/
+
+.nav{
+    &__list-enlace{
+        display: flex;
+        align-items: center;
+        column-gap: 52px;
+        padding-top: 20px;
+    }
+    
+    &__enlace{
+        font-family: $font-secundaria;
+        font-weight: selecFontWeight(bold);
+        text-transform: uppercase;
+        color: selecColorText(variacion);
+        @include font-size(big);
+    }
+}
