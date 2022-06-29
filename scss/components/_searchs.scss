@@ -11,10 +11,8 @@
         color: selecColorText(secundario);
     }
     &__label{
-        font-family: $font-secundaria;
-        font-weight: selecFontWeight(bold);
         color: selecColorText(variacion);
-        text-transform: uppercase;
+        @include add-style-title;
         @include font-size(big);
         
     }

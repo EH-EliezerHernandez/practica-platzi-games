@@ -11,9 +11,7 @@
     }
     
     &__enlace{
-        font-family: $font-secundaria;
-        font-weight: selecFontWeight(bold);
-        text-transform: uppercase;
+        @include add-style-title;
         color: selecColorText(variacion);
         @include font-size(big);
     }

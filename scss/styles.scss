@@ -5,7 +5,6 @@
 
 //BASES
 @import "./bases/helpers";
-@import "./bases/normalize";
 @import "./bases/resets";
 
 //LAYOUTS
@@ -14,3 +13,8 @@
 
 //COMPONENTS
 @import "./components/searchs";
+@import "./components/noticias";
+@import "./components/interacciones";
+
+//PAGES
+@import "./pages/homes";

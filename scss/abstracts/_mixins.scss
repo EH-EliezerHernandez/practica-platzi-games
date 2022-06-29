@@ -13,3 +13,16 @@
     width: $width-size;
     height: $height-size;
 }
+
+@mixin add-style-title{
+    font-family: $font-secundaria;
+    font-weight: selecFontWeight(bold);
+    text-transform: uppercase;
+}
+
+@mixin add-background-img($url-img){
+    background-image: url($url-img);
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: cover;
+}
