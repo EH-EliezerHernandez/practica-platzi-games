@@ -26,3 +26,32 @@
     background-position: center 0%;
     background-size: cover;
 }
+
+@mixin add-bg-noticia($i){
+    $list-bg-url:(
+        "../../assets/img/cyberpunk-2077.jpg",
+        "../../assets/img/rdr2.jpg",
+        "../../assets/img/zelda.jpg",
+        "../../assets/img/final-fantasy.jpg",
+        "../../assets/img/fortnite.jpg",
+        "../../assets/img/xbox.jpg"
+    );
+    $bg-url: nth($list-bg-url,$i);
+    @include add-background-img($bg-url);
+}
+@mixin posicionar-noticias-grid{
+    $grid-column-valor-1: (1,4,2,2,3,4);
+    $grid-column-valor-2: (4,5,4,3,4,5);
+    $grid-row-valor-1: (1,1,3,4,4,4);
+    $grid-row-valor-2: (3,2,4,5,5,5);
+    
+    @for $i from 1 to length($grid-column-valor-1) + 1{
+        &--#{$i}{
+            grid-column-start: nth($grid-column-valor-1, $i);
+            grid-column-end: nth($grid-column-valor-2, $i);
+            grid-row-start: nth($grid-row-valor-1, $i);
+            grid-row-end: nth($grid-row-valor-2, $i);
+            @include add-bg-noticia($i);
+        }
+    }
+}
