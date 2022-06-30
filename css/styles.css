@@ -157,6 +157,18 @@ ul, ol {
   grid-row: 2/4;
   background-color: #8841DA;
 }
+.noticia--four {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-image: url("../../assets/img/zelda.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: cover;
+}
 .noticia--small {
   padding: 20px;
 }

@@ -25,6 +25,11 @@
         grid-row: 2 / 4;
         background-color: selecColorBg(secundario);
     }
+    &--four{
+        grid-column: 2 / 4;
+        grid-row: 3 / 4; 
+        @include add-background-img("../../assets/img/zelda.jpg");
+    }
     &--small{
         padding: 20px; 
     }
