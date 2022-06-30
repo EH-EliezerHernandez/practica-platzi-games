@@ -15,6 +15,13 @@
         min-height: 559px;
         @include add-background-img("../../assets/img/cyberpunk-2077.jpg");
     }
+    &--two{
+        grid-column: 4 / 5;
+        @include add-background-img("../../assets/img/rdr2.jpg");
+    }
+    &--small{
+        padding: 20px; 
+    }
     &--oscuro{
         position: relative;
     }
@@ -40,8 +47,10 @@
             left: 4px;
             right: 4px;
         }
+        min-width: 100px;
         color: selecColorText(claro);
         background-color: selecColorBg(secundario);
+        @include font-size(big);
         @include add-style-title;
     }
     &__title{
@@ -50,6 +59,10 @@
     }
     &__title--u-big{
         @include font-size(u-big);
+    }
+    &__title--x-big{
+        @include font-size(x-big);  
+        line-height: 1;
     }
     &__description{
         color: selecColorText(claro);
