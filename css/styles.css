@@ -169,6 +169,43 @@ ul, ol {
   background-position: center 0%;
   background-size: cover;
 }
+.noticia--five {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  background-image: url("../../assets/img/final-fantasy.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: cover;
+  background-position: 0% 0%;
+}
+.noticia--six {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  background-image: url("../../assets/img/fortnite.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: cover;
+}
+.noticia--seven {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  background-image: url("../../assets/img/xbox.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: cover;
+}
 .noticia--small {
   padding: 20px;
 }

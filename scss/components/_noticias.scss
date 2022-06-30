@@ -30,6 +30,22 @@
         grid-row: 3 / 4; 
         @include add-background-img("../../assets/img/zelda.jpg");
     }
+    &--five{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5; 
+        @include add-background-img("../../assets/img/final-fantasy.jpg");
+        background-position: 0% 0%;
+    }
+    &--six{
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+        @include add-background-img("../../assets/img/fortnite.jpg");
+    }
+    &--seven{
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
+        @include add-background-img("../../assets/img/xbox.jpg");
+    }
     &--small{
         padding: 20px; 
     }
