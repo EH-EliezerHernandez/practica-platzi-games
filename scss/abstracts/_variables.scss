@@ -8,6 +8,7 @@ $color-secundario: #8841DA;
 $color-variacion: #3f579a;
 $color-claro: #FFF;
 $color-gray-soft: #ebebeb;
+$color-gray-medium: #ccc;
 
 /*-------COLORS TEXT---- */
 $colors-text:(
@@ -23,6 +24,7 @@ $colors-background:(
         secundario: $color-secundario,
         claro: $color-claro,
         gray-soft: $color-gray-soft,
+        gray-medium: $color-gray-medium,
 );
 
 /*-------FONT WEIGHTS---- */
