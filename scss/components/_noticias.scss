@@ -89,10 +89,29 @@
         @include font-size(big);
     }
     &__list-destacadas{
-        border-top: 1px solid selecColorBg(gray-soft);
+        margin-top: 12px;
+        counter-reset: counter-noticias;
+    }
+    &__destacada{
+        padding: {
+            top: 24px;
+            bottom: 24px;
+        }
+        position: relative;
+        padding-left: 50px;
+        border-top: 1px solid selecColorBg(gray-opacity);
+    }
+    &__destacada::before{
+        content: counter(counter-noticias);
+        position: absolute;
+        left: 20px;
+        color: selecColorText(gray-opacity);
+        counter-increment: counter-noticias;
+        @include font-size(big);
     }
     &__enlace{
         color: selecColorText(primario);
+        @include font-size(big);
     }
     &--oscuro{
         position: relative;
