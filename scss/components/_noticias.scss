@@ -27,6 +27,15 @@
         grid-row: 2 / 4;
         background-color: selecColorBg(secundario);
     }
+
+    &--destacada{
+        grid-row: 3 / 5;
+       padding: 20px;
+       -webkit-box-shadow: 0px 12px 36px -7px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0px 12px 36px -7px rgba(0,0,0,0.3);
+       box-shadow: 0px 12px 36px -7px rgba(0,0,0,0.3);
+
+    }
     &--big-medium{
         @include font-size(big-medium);
     }
@@ -63,6 +72,11 @@
         color: selecColorText(claro);
         @include add-style-title;
     }
+    &__title--oscuro{
+        color: selecColorText(primario);
+        @include add-style-title;
+        @include font-size(big-medium);
+    }
     &__title--u-big{
         @include font-size(u-big);
     }
@@ -72,6 +86,31 @@
     }
     &__description{
         color: selecColorText(claro);
+        @include font-size(big);
+    }
+    &__list-destacadas{
+        margin-top: 12px;
+        counter-reset: counter-noticias;
+    }
+    &__destacada{
+        padding: {
+            top: 24px;
+            bottom: 24px;
+        }
+        position: relative;
+        padding-left: 50px;
+        border-top: 1px solid selecColorBg(gray-opacity);
+    }
+    &__destacada::before{
+        content: counter(counter-noticias);
+        position: absolute;
+        left: 20px;
+        color: selecColorText(gray-opacity);
+        counter-increment: counter-noticias;
+        @include font-size(big);
+    }
+    &__enlace{
+        color: selecColorText(primario);
         @include font-size(big);
     }
     &--oscuro{

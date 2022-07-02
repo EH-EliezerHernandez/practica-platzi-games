@@ -8,13 +8,16 @@ $color-secundario: #8841DA;
 $color-variacion: #3f579a;
 $color-claro: #FFF;
 $color-gray-soft: #ebebeb;
-
+$color-gray-medium: #ccc;
+$color-gray-opacity: rgb(51 51 51);
 /*-------COLORS TEXT---- */
 $colors-text:(
     primario: $color-primario,
     secundario: $color-secundario,
     variacion: $color-variacion,
     claro: $color-claro,
+    gray-medium: $color-gray-medium,
+    gray-opacity: rgba($color-gray-opacity,.5)
     );
     
 /*-------COLORS BACKGROUND---- */
@@ -23,6 +26,8 @@ $colors-background:(
         secundario: $color-secundario,
         claro: $color-claro,
         gray-soft: $color-gray-soft,
+        gray-medium: $color-gray-medium,
+        gray-opacity: rgba($color-gray-opacity,.2),
 );
 
 /*-------FONT WEIGHTS---- */
