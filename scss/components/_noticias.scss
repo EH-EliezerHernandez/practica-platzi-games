@@ -1,0 +1,128 @@
+/*********************************\
+        $NOTICIAS
+\*********************************/
+
+.noticia{
+    &--principal{
+        padding: {
+            top: 202px;
+            left: 20px;
+            right: 20px;
+            bottom: 26px;
+        };
+        min-height: 559px;
+        @include add-background-img("../../assets/img/cyberpunk-2077.jpg");
+    }
+    
+    @include posicionar-noticias-grid;
+
+    &--actualizacion{
+        padding: {
+            top: 48px;
+            left: 44px;
+            right: 78px;
+            bottom: 32px;
+        }
+        grid-column: 4 / 5;
+        grid-row: 2 / 4;
+        background-color: selecColorBg(secundario);
+    }
+
+    &--destacada{
+        grid-row: 3 / 5;
+       padding: 20px;
+       -webkit-box-shadow: 0px 12px 36px -7px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0px 12px 36px -7px rgba(0,0,0,0.3);
+       box-shadow: 0px 12px 36px -7px rgba(0,0,0,0.3);
+
+    }
+    &--big-medium{
+        @include font-size(big-medium);
+    }
+    &--small{
+        padding: 20px; 
+    }
+    &__contenido{
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+    }
+    &__contenido--large{
+        grid-template-rows: repeat(3,auto) 1fr;
+    }
+    &__contenido--short{
+        grid-template-rows: repeat(2,auto) 1fr;
+    }
+    &__categoria{
+        padding: {
+            left: 4px;
+            right: 4px;
+        }
+        min-width: 100px;
+        color: selecColorText(claro);
+        background-color: selecColorBg(secundario);
+        @include font-size(big);
+        @include add-style-title;
+    }
+    &__title{
+        color: selecColorText(claro);
+        @include add-style-title;
+    }
+    &__title--oscuro{
+        color: selecColorText(primario);
+        @include add-style-title;
+        @include font-size(big-medium);
+    }
+    &__title--u-big{
+        @include font-size(u-big);
+    }
+    &__title--x-big{
+        @include font-size(x-big);  
+        line-height: 1;
+    }
+    &__description{
+        color: selecColorText(claro);
+        @include font-size(big);
+    }
+    &__list-destacadas{
+        margin-top: 12px;
+        counter-reset: counter-noticias;
+    }
+    &__destacada{
+        padding: {
+            top: 24px;
+            bottom: 24px;
+        }
+        position: relative;
+        padding-left: 50px;
+        border-top: 1px solid selecColorBg(gray-opacity);
+    }
+    &__destacada::before{
+        content: counter(counter-noticias);
+        position: absolute;
+        left: 20px;
+        color: selecColorText(gray-opacity);
+        counter-increment: counter-noticias;
+        @include font-size(big);
+    }
+    &__enlace{
+        color: selecColorText(primario);
+        @include font-size(big);
+    }
+    &--oscuro{
+        position: relative;
+    }
+    &--oscuro::after{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(selecColorBg(primario),.5);
+    }
+}

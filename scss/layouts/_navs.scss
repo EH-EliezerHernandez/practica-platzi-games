@@ -1,0 +1,18 @@
+/*********************************\
+        $NAVS
+\*********************************/
+
+.nav{
+    &__list-enlace{
+        display: flex;
+        align-items: center;
+        column-gap: 52px;
+        padding-top: 20px;
+    }
+    
+    &__enlace{
+        @include add-style-title;
+        color: selecColorText(variacion);
+        @include font-size(big);
+    }
+}

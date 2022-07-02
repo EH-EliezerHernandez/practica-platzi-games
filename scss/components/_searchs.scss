@@ -1,0 +1,19 @@
+/*********************************\
+        $SEARCHS
+\*********************************/
+
+.search{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    &__icon{
+        font-size: 20px;
+        color: selecColorText(secundario);
+    }
+    &__label{
+        color: selecColorText(variacion);
+        @include add-style-title;
+        @include font-size(big);
+        
+    }
+}
