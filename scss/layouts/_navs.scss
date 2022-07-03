@@ -1,0 +1,33 @@
+/*********************************\
+        $NAVS
+\*********************************/
+
+.nav{
+    &__list-enlace{
+        display: flex;
+        align-items: center;
+        column-gap: 52px;
+        padding-top: 20px;
+    }
+
+
+    &__enlace{
+        @include add-style-title;
+        @include font-size(big);
+    }
+
+
+    &__enlace:hover{
+        text-decoration: underline;
+    }
+
+
+    &__enlace--header{
+        color: selecColorText(variacion);
+    }
+
+    
+    &__enlace--footer{
+        color: selecColorText(claro);
+    }
+}

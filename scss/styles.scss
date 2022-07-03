@@ -1,0 +1,22 @@
+//ABSTRACTS
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+//BASES
+@import "./bases/helpers";
+@import "./bases/resets";
+
+//LAYOUTS
+@import "./layouts/layouts";
+@import "./layouts/navs";
+
+//COMPONENTS
+@import "./components/searchs";
+@import "./components/noticias";
+@import "./components/interacciones";
+@import "./components/btns";
+@import "./components/social-layouts";
+
+//PAGES
+@import "./pages/homes";
