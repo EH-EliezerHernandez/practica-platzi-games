@@ -1,0 +1,27 @@
+/*********************************\
+        $SOCIAL LAYOUTS
+\*********************************/
+
+.social-layout{
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+        color: selecColorText(claro);
+
+
+        &__label{
+                font-family: $font-primaria;
+                @include font-size(big);
+        }
+
+
+        &__list{
+                display: flex;
+                column-gap: inherit;
+        }
+
+        
+        &__icon{
+                @include font-size(big);
+        }
+}

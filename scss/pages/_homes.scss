@@ -3,7 +3,12 @@
 \*********************************/
 
 .main{
-    margin-top: 20px;
+    margin: {
+      top: 20px;
+      bottom: 20px;  
+    } 
+
+
     &--home{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -14,7 +19,6 @@
         margin: {
             left: auto;
             right: auto;
-            bottom: 0;
         } 
     }
 }
