@@ -51,20 +51,29 @@ ul, ol {
 }
 
 /*********************************\
-        $HEADERS
+        $LAYOUTS
 \*********************************/
-.header {
+.layout {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 40px 1fr 40px auto;
   grid-template-columns: auto 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 12px;
+}
+.layout--header {
   border-bottom: 1px solid #ebebeb;
+  padding-bottom: 12px;
+}
+.layout--footer {
+  background-color: #333333;
+  padding-bottom: 32px;
 }
 
 /*********************************\
@@ -86,9 +95,17 @@ ul, ol {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #3f579a;
   font-size: 1.125rem;
   line-height: 1.6875rem;
+}
+.nav__enlace:hover {
+  text-decoration: underline;
+}
+.nav__enlace--header {
+  color: #3f579a;
+}
+.nav__enlace--footer {
+  color: #FFF;
 }
 
 /*********************************\
@@ -393,10 +410,44 @@ ul, ol {
 }
 
 /*********************************\
+        $SOCIAL LAYOUTS
+\*********************************/
+.social-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+}
+.social-layout__label {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.social-layout__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: inherit;
+     -moz-column-gap: inherit;
+          column-gap: inherit;
+}
+.social-layout__icon {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+/*********************************\
         $HOMES
 \*********************************/
 .main {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .main--home {
   display: -ms-grid;
@@ -412,7 +463,6 @@ ul, ol {
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
 }
 .main--home > *:nth-child(1) {
   -ms-grid-row: 1;

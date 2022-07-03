@@ -6,6 +6,7 @@ html{
     box-sizing: border-box;
 }
 
+
 *,
 *::after,
 *::before{
@@ -14,17 +15,21 @@ html{
     margin: 0;
 }
 
+
 body{
     font-family: $font-primaria;
 }
+
 
 picture{
     margin: 0;
 }
 
+
 a{
     text-decoration: none;
 }
+
 
 ul,ol{
     list-style: none;

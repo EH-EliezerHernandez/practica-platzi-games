@@ -6,15 +6,21 @@
         display: flex;
         column-gap: 40px;
         width: min-content;
+
+
         &__caracteristica{
                 display: flex;
                 align-items: center;
                 gap: 4px;
         }
+
+
         &__icon{
                 color: selecColorText(claro);
                 @include font-size(big);
         }
+
+        
         &__number{
                 color: selecColorText(claro);
                 @include font-size(big);

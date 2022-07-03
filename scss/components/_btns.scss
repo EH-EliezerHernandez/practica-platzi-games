@@ -6,6 +6,8 @@
         color: selecColorText(claro);
         @include font-size(big-medium);
         @include add-style-title;
+
+        
         &--cuadrado{
                 padding: 8px;
                 margin-top: 4px;

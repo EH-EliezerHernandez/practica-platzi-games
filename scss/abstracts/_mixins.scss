@@ -9,10 +9,12 @@
     line-height: $size-REM * 1.5;
 }
 
+
 @mixin add-dimension($width-size,$height-size){
     width: $width-size;
     height: $height-size;
 }
+
 
 @mixin add-style-title{
     font-family: $font-secundaria;
@@ -20,12 +22,14 @@
     text-transform: uppercase;
 }
 
+
 @mixin add-background-img($url-img){
     background-image: url($url-img);
     background-repeat: no-repeat;
     background-position: center 0%;
     background-size: cover;
 }
+
 
 @mixin add-bg-noticia($i){
     $list-bg-url:(
@@ -39,6 +43,8 @@
     $bg-url: nth($list-bg-url,$i);
     @include add-background-img($bg-url);
 }
+
+
 @mixin posicionar-noticias-grid{
     $grid-column-valor-1: (1,4,2,2,3,4);
     $grid-column-valor-2: (4,5,4,3,4,5);
