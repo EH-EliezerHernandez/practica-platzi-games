@@ -1,0 +1,27 @@
+/*********************************\
+        $LAYOUTS
+\*********************************/
+.layout{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 40px;
+
+
+    padding: {
+        left: 20px;
+        right: 20px;
+    }
+
+
+    &--header{
+        border-bottom: 1px solid selecColorBg(gray-soft);
+        padding-bottom: 12px;
+    }
+
+    
+    &--footer{
+        background-color: selecColorBg(primario);
+        padding-bottom: 32px;
+    }
+}
